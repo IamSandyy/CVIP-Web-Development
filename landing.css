@@ -1,0 +1,144 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Style the header/navbar */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-profile {
+    margin-left: auto;
+}
+
+.signin-btn {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the hero section with the background video */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the movie slider section */
+.movie-slider {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.movie-slider h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Customize the slider image size */
+.slider-container img {
+    max-width: 200px;
+    margin: 0 20px;
+}
+
+/* Add more CSS styles for other sections and elements as needed */
+img{
+    width: 350px; /* Initial width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+/* Increase the size on hover */
+img:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    align-items: center;
+    margin-left: 100px;
+    display: inline-block;
+}
